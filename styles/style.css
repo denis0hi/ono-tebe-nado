@@ -36,16 +36,15 @@ header {
   text-underline-offset: 4px;
 }
 .cover__background-image {
+  display: block;
+  margin-top: 96px;
+  margin-bottom: 179px;
   min-height: 100%;
   background: url("../images/cover.jpg") rgba(0, 0, 0, 0.6);
   background-size: cover;
   background-blend-mode: multiply;
   height: 757px;
   width: 1100px;
-}
-.cover__jambotron {
-  margin-top: 96px;
-  margin-bottom: 179px;
   color: white;
 }
 .cover__title {
