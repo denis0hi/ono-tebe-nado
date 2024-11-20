@@ -11,10 +11,10 @@
   </head>
   <body>
     <header>
-      <nav class="header__menu">
-        <ul>
-          <li class="header__link_active">
-            <a href="главная">главная</a>
+      <nav>
+        <ul class="header__menu">
+          <li class="header__links-list-item">
+            <a class="header__link_active" href="главная">главная</a>
           </li>
           <li class="header__links-list-item">
             <a href="посмотреть_лоты">посмотреть лоты</a>
@@ -42,36 +42,34 @@
     <main>
       <section>
         <div class="cover__background-image">
-          <div class="cover__title">
-            <h1 class="aligned-text">
+          <h1 class="cover__title">
+            <span class="aligned-text">
               <span class="letter-spacing"
                 >О<span class="letter-spacing-extended">но</span></span
               >
-            </h1>
-            <h1 class="aligned-text_center">
+            </span>
+            <span class="aligned-text_center">
               <span class="letter-spacing"
                 >те<span class="letter-spacing-extended">бе</span></span
               >
-            </h1>
-            <h1 class="aligned-text_right">
+            </span>
+            <span class="aligned-text_right">
               <span class="letter-spacing-extended"
                 >н<span class="letter-spacing">ад</span></span
               ><span class="no-letter-spacing">o</span>
-            </h1>
-          </div>
-          <p class="cover__description">
-            <span class="cover__description-text"
-              >Аукцион вещей, в которые никто не верил</span
-            >
+            </span>
+          </h1>
+          <div class="cover__description">
+            <p class="cover__description-text">Аукцион вещей, в которые никто не верил</p>
             <button class="bet-button">Сделать ставку</button>
-          </p>
+          </div>
         </div>
       </section>
       <section class="lots">
         <h2 class="lots__heading">лоты</h2>
         <ul class="lots__card-list">
-          <li>
-            <a>
+          <li class="lots__card-list-item">
+            <a href="card_type_film">
               <article class="card card_type_film">
                 <h3 class="card__title">
                   Фильм режиссёра, который бросил киношколу
@@ -84,8 +82,8 @@
               </article>
             </a>
           </li>
-          <li>
-            <a>
+          <li class="lots__card-list-item">
+            <a href="card_type_book">
               <article class="card card_type_book">
                 <h3 class="card__title">
                   Книга, где описан один скучный день из жизни рекламного агента
@@ -101,8 +99,8 @@
               </article>
             </a>
           </li>
-          <li>
-            <a>
+          <li class="lots__card-list-item">
+            <a href="card_type_picture">
               <article class="card card_type_picture">
                 <h3 class="card__title">
                   Картина, которую повторит даже 5-летний сын маминой подруги
@@ -119,7 +117,7 @@
         </ul>
         <a class="lots__look-more-link">посмотреть больше</a>
       </section>
-      <div>
+      <section>
         <div class="about__column">
           <div class="about__logo">
             <img
@@ -150,7 +148,7 @@
             </div>
           </article>
         </div>
-      </div>
+      </section>
     </main>
     <footer>
       <address class="contacts">
@@ -161,11 +159,11 @@
         наб. Принсенграхт 263- 265, Амстердам
       </address>
       <ul>
-        <li class="footer__menu-link_active"><a>главная</a></li>
+        <li class="footer__menu-list-item"><a class="footer__menu-link_active">главная</a></li>
         <li class="footer__menu-list-item"><a>посмотреть лоты</a></li>
         <li class="footer__menu-list-item"><a>об аукционе</a></li>
       </ul>
-      <address class="footer__social-list">
+      <nav class="footer__social-list">
         <ul class="footer__social-list-item">
           <li class="footer__social-link">
             <a><img src="images/yt.svg" alt="ссылка на youtube"></a>
@@ -177,7 +175,7 @@
             <a><img src="images/pinterest.svg" alt="ссылка на pinterest"></a>
           </li>
         </ul>
-      </address>
+      </nav>
     </footer>
   </body>
 </html>
