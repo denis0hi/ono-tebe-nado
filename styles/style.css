@@ -1,10 +1,8 @@
 header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  width: 1052px;
+  gap: 40px;
   margin-top: 92px;
-  margin-bottom: 24px;
   font-size: 18px;
   font-weight: 400;
 }
@@ -24,7 +22,6 @@ header {
 .header__links-list-item:has(>.header__link_active) {
   display: inline-block;
   text-decoration: none;
-  list-style-type: none
 }
 .header__logo-image {
   margin-right: 144px;
@@ -32,7 +29,6 @@ header {
   height: 105px;
 }
 .contacts {
-  min-width: 240.52px;
   max-width: 240.52px;
   font-size: 18px;
   font-weight: 400;
@@ -59,7 +55,6 @@ header {
 .cover__title {
   display: flex;
   flex-direction: column;
-  width: 1000px;
   font-size: 100px;
   text-transform: uppercase;
   z-index: 2;
@@ -143,6 +138,9 @@ header {
   width: 334px;
   min-height: 563px;
 }
+.lots__card-list-item a {
+  text-decoration: none;
+}
 .card_type_film {
   background-image: url("../images/card-lot-01.jpg");
 }
@@ -150,7 +148,7 @@ header {
   background-image: url("../images/card-lot-02.jpg");
 }
 .card_type_picture {
-  background: url("../images/card-lot-03.jpg");
+  background-image: url("../images/card-lot-03.jpg");
 }
 .card {
   display: flex;
@@ -175,6 +173,7 @@ header {
   font-size: 20px;
   font-weight: 400;
   line-height: 24px;
+ 
 }
 .lots__look-more-link {
   font-size: 20px;
@@ -242,9 +241,6 @@ footer {
   font-weight: 400;
   line-height: 21.13px;
   text-align: center;
-}
-.header__link_active {
-  text-decoration: none;
 }
 .footer__menu-list-item:has(>.footer__menu-link_active) {
   text-align: center;
